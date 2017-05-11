@@ -50,50 +50,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Formulários prenchido através do site</h2>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-					
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                      <thead>
-                        <tr>
-                          <th>Nome</th>
-                          <th>Telefone</th>
-                          <th>E-mail</th>
-                          <th>Observações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                          <?php if($clients->num_rows() == 0) : ?>
-                            <tr>
-                                <td colspan=4>
-                                    <center>NENHUM CONTATO EFETUADO </center>
-                                </td>
-                            </tr>
-                          <?php else: ?>
-                            <?php foreach($clients->result() as $key => $value): ?>
-                                <tr>
-                                    <td><?=$value->name?></td>
-                                    <td><?=$value->telphone?></td>
-                                    <td><?=$value->email?></td>
-                                    <td><?=$value->observation?></td>
-                                </tr>
-                            <?php endforeach; ?>
-                          <?php endif; ?>
-                      </tbody>
-                    </table>
-					
-					
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Quem baixou as plantas</h2>
+                    <h2>Quem baixou o material</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
@@ -119,48 +76,6 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
                                     <td><?=$value->email?></td>
                                     <td><?=$value->plant_link?></td>
                                     <td><?=date('d/m/Y',strtotime($value->data))?></td>
-                                </tr>
-                            <?php endforeach; ?>
-                          <?php endif; ?>
-                      </tbody>
-                    </table>
-          
-          
-                  </div>
-                </div>
-              </div>
-              
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Formulários de contato</h2>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-          
-                    <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
-                      <thead>
-                        <tr>
-                          <th>Nome</th>
-                          <th>E-mail</th>
-                          <th>Mensagem</th>
-                          <th>Data</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                          <?php if($contact_form->num_rows() == 0) : ?>
-                            <tr>
-                                <td colspan=4>
-                                    <center>NENHUM CONTATO EFETUADO </center>
-                                </td>
-                            </tr>
-                          <?php else: ?>
-                            <?php foreach($contact_form->result() as $key => $value): ?>
-                                <tr>
-                                    <td><?=$value->name?></td>
-                                    <td><?=$value->email?></td>
-                                    <td><?=$value->message?></td>
-                                    <td><?=date('d/m/Y',strtotime($value->date))?></td>
                                 </tr>
                             <?php endforeach; ?>
                           <?php endif; ?>
