@@ -27,4 +27,43 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('template/footer');
 	}
+
+	/*
+	*
+	* FUNCTION TO SEND THE PDF MATERIAL TO USER EMAIL
+	*
+	* @access public
+	* @return redirect
+	*/
+	public function sendMaterialEmail(){
+
+		$message = "Olá, acesse nosso driver para fazer download / visualizar a planta:";
+		$message .="\n https://drive.google.com/open?id=0B3Dy9zCA0QZUcFVsc0VueGtWaU0";
+		$message .= "\n Agradecemos o contato";
+
+		$insert = array(
+			'email'			=>	$this->input->post('email'),
+			'plant_link'	=>	"https://drive.google.com/open?id=0B3Dy9zCA0QZUcFVsc0VueGtWaU0",
+			'data'			=>  date("Y-m-d"),
+		);
+
+		$this->load->library('email');
+        $this->email->clear();
+        $this->email->set_newline("\r\n");
+        $this->email->from('internet@praias.com');
+        $this->email->to($this->input->post('email'));
+        $this->email->subject('Praias Construtora - Download do material');
+        $this->email->message($message);
+        if($this->email->send()){
+			
+        	if ($this->plant_request_model->insert($insert)) {
+        		return $this->json->dieJSON(
+        			array(
+        				'code'	=> 200
+        			)
+        		);
+        	}
+
+		}
+	}
 }

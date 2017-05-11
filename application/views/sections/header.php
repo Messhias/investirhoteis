@@ -31,7 +31,7 @@
 				Clique abaixo para ter acesso ao material completo
 			</span>
 
-			<button type="button" class="col-lg-10 col-md-10 col-xs-12 col-sm-12 col-lg-offset-1 col-md-offset-1 btn-receive-material">
+			<button type="button" class="col-lg-10 col-md-10 col-xs-12 col-sm-12 col-lg-offset-1 col-md-offset-1 btn-receive-material" data-toggle="modal" data-target="#materialModal">
 				<i>
 					<img src="<?=site_url('img/document-icon.png') ?>" alt="" class='img-responsive'>
 				</i>
