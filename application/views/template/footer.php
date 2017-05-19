@@ -13,17 +13,17 @@
 <div class="container col-lg-12 col-md-12 col-xs-12 col-sm-12 header footer-container"> 
 	
 	<div class="row">
-		<div class='col-sm-12 col-xs-12 col-lg-3 col-md-3 col-lg-offset-1 copyright'>
-			TODOS OS DIREITOS RESERVADOS
-		</div>
-	
-		<div class='col-sm-12 col-xs-12 col-lg-3 col-md-3 col-lg-offset-1 logo'>		
-			<img src="<?=site_url('img/praias.png') ?>" alt="Praias construtora logo"
-			class='img-responsive'>
-		</div>
+		<div class='col-sm-12 col-xs-12 col-lg-2 col-md-2 col-lg-offset-1 '>
+    </div>
+  
+    <div class='col-sm-12 col-xs-12 col-lg-4 col-md-4 col-lg-offset-1 copyright'>    
+			Todos os direitos reservados <strong>  &copy; </strong>
+      <dt>
+			 <?=date('Y') ?> 
+      </dt>
+    </div>
 
-		<div class='col-sm-12 col-xs-12 col-lg-2 col-md-2 col-lg-offset-2 copyright'>
-			<?=date('Y') ?>
+    <div class='col-sm-12 col-xs-12 col-lg-2 col-md-2 col-lg-offset-2 copyright'>
 		</div>
 
 	</div>
@@ -70,5 +70,19 @@
 	<img src="<?=site_url('img/praias.png') ?>" alt="PRAIAS CONSTRUTORA" class='img-responsive'>
 </div>
 <!-- END LOADING  -->
+
+<!-- analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98357423-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- end analytics -->
+
 </body>
 </html>

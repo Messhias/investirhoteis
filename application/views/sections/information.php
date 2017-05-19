@@ -11,14 +11,21 @@
 
 		<p>
 			Antes de comprar um quarto de hotel para investir é preciso avaliar e ter uma noção básica sobre o mercado. 
+			<br>
+			<br>
 			Esse material contém alguns pontos que mais geraram dúvidas em nossos clientes.
 		</p>
 
-		<h1 class="subtitle-information">Experiência e tradição</h1>
-
 		<p>
-			A Praias é uma empresa do mercado imobiliário com mais de 50 anos de atuação. Dentro nossos projetos  entregues estão o Ibis Congonhas, Ibis Mogi, Ibis 
-			Jundiaí. 
+			- FONTES DE RECEITA - RevPAR
+			<br>
+			- CONDO-HOTEL E POOL DE LOCAÇÃO
+			<br>
+			- O QUE É O FF&E
+			<br>
+			- BANDEIRA E OPERADORA HOTELEIRA
+			<br>
+			- DISPENSA CVM E ESTUDO DE VIABILIDADE
 
 		</p>
 

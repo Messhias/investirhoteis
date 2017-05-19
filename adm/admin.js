@@ -1,5 +1,5 @@
-
-var site_url = "http://localhost/investirhoteis/";
+// var site_url = "http://localhost/investirhoteis/";
+var site_url = "http://imoveispararenda.com.br/";
 
 $(document).ready(function() {
 

@@ -37,8 +37,8 @@ class Welcome extends CI_Controller {
 	*/
 	public function sendMaterialEmail(){
 
-		$message = "Olá, acesse nosso driver para fazer download / visualizar a planta:";
-		$message .="\n https://drive.google.com/open?id=0B3Dy9zCA0QZUcFVsc0VueGtWaU0";
+		$message = "Olá, acesse nosso driver para fazer download / visualizar o documento:";
+		$message .="\n https://drive.google.com/open?id=0B-yTn1Lu6L40WG5zRVRCT0x2U1k";
 		$message .= "\n Agradecemos o contato";
 
 		$insert = array(
